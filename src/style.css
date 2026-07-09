@@ -1,31 +1,117 @@
-:root { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #eef2f8; }
-* { box-sizing: border-box; }
-body { margin: 0; }
-.app { max-width: 1180px; margin: 0 auto; padding: 28px; }
-.hero { display: flex; justify-content: space-between; gap: 24px; align-items: center; background: linear-gradient(135deg, #14213d, #284b63); color: white; padding: 34px; border-radius: 28px; box-shadow: 0 16px 45px rgba(20,33,61,.25); }
-.hero h1 { margin: 0; font-size: clamp(32px, 5vw, 56px); }
-.hero p { margin: 10px 0 0; color: #dce7f4; font-size: 18px; }
-.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 12px !important; color: #9bd3ff !important; }
-.badge { background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.28); padding: 12px 18px; border-radius: 999px; white-space: nowrap; }
-.upload-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
-.upload-card { cursor: pointer; background: white; padding: 24px; border: 2px dashed #b8c4d6; border-radius: 22px; display: grid; gap: 7px; box-shadow: 0 10px 24px rgba(23,32,51,.08); }
-.upload-card svg { width: 34px; height: 34px; color: #284b63; }
-.upload-card input { display: none; }
-.upload-card span { color: #68758a; }
-.message { color: #526072; }
-.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 20px 0; }
-.card { background: white; border-radius: 20px; padding: 20px; box-shadow: 0 10px 24px rgba(23,32,51,.08); display: grid; gap: 8px; }
-.card svg { color: #284b63; }
-.card span { color: #68758a; }
-.card strong { font-size: 30px; }
-.panel { background: white; border-radius: 24px; padding: 24px; box-shadow: 0 10px 24px rgba(23,32,51,.08); }
-.panel h2 { margin-top: 0; }
-.table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; min-width: 850px; }
-th, td { text-align: left; padding: 13px 10px; border-bottom: 1px solid #edf0f5; }
-th { color: #526072; font-size: 13px; text-transform: uppercase; letter-spacing: .05em; }
-.dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; }
-.green { background: #33b469; }
-.yellow { background: #f4b942; }
-.red { background: #e7505a; }
-@media (max-width: 800px) { .hero, .upload-grid, .cards { grid-template-columns: 1fr; } .hero { display: block; } .badge { display: inline-block; margin-top: 20px; } }
+body {
+
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  background: #eef2f7;
+
+}
+
+.app {
+
+  min-height: 100vh;
+
+  padding: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+.card {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 32px;
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+
+}
+
+h1 {
+
+  margin-top: 0;
+
+  color: #14324a;
+
+}
+
+.upload {
+
+  display: block;
+
+  border: 2px dashed #9fb3c8;
+
+  padding: 24px;
+
+  border-radius: 18px;
+
+  cursor: pointer;
+
+  margin: 24px 0;
+
+  font-weight: bold;
+
+}
+
+.upload input {
+
+  display: none;
+
+}
+
+.file-list {
+
+  margin-bottom: 20px;
+
+  line-height: 1.8;
+
+}
+
+button {
+
+  background: #14324a;
+
+  color: white;
+
+  border: 0;
+
+  border-radius: 14px;
+
+  padding: 14px 22px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+}
+
+.results {
+
+  margin-top: 30px;
+
+}
+
+pre {
+
+  background: #111827;
+
+  color: #e5e7eb;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  overflow-x: auto;
+
+  font-size: 12px;
+
+}
